@@ -20,25 +20,29 @@
 		& .bingkai-gambar {
 			width: 450px;
 			height: 300px;
-			border: 2px solid black;
+			border: 4px solid black;
 			position: relative;
 
-			& div {
+			& img {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				font-size: xxx-large;
-				width: 100%;
-				height: 80%;
+				width: 95%;
+				height: 100%;
 				border-bottom: 1px soldi gray;
 			}
 
 			& h4 {
+				background-color: gray;
+				width: 300px;
+				height: 25px;
 				text-align: center;
 				transform: rotate(90deg);
 				position: absolute;
-				top: 22%;
-				right: -13%;
+				bottom: 0;
+				right: 25px;
+				transform-origin: bottom right;
 			}
 		}
 	}
