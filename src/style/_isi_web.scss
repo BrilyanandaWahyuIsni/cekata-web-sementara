@@ -1,0 +1,58 @@
+@use 'mixin' as mx;
+
+
+.isi-web {
+	display: flex;
+	height: calc(100% - mx.$hj_judul);
+	justify-content: space-between;
+
+	& .gambar-isi {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		& .bingkai-gambar {
+			width: 450px;
+			height: 300px;
+			border: 2px solid black;
+
+			& div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: xxx-large;
+				width: 100%;
+				height: 80%;
+				border-bottom: 1px soldi gray;
+			}
+
+			& h4 {
+				width: 100%;
+				text-align: center;
+
+			}
+		}
+	}
+
+	& .keterangan-isi {
+		width: 40%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		& div:nth-child(1) {
+			font-size: 3rem;
+			font-weight: bolder;
+			padding-bottom: 10px;
+			border-bottom: 5px solid black;
+			margin-bottom: 25px;
+		}
+
+		& div:nth-child(2) {
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
+}
