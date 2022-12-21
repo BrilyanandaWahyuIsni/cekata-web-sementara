@@ -1,21 +1,27 @@
 @use 'mixin' as mx;
 
+@mixin bd {
+	border: 1px solid red;
+}
 
 .isi-web {
-	display: flex;
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1.2fr 1fr;
+	grid-template-rows: 1fr;
 	height: calc(100% - mx.$hj_judul);
-	justify-content: space-between;
 
 	& .gambar-isi {
-		width: 50%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 
 		& .bingkai-gambar {
 			width: 450px;
 			height: 300px;
 			border: 2px solid black;
+			position: relative;
 
 			& div {
 				display: flex;
@@ -28,19 +34,21 @@
 			}
 
 			& h4 {
-				width: 100%;
 				text-align: center;
-
+				transform: rotate(90deg);
+				position: absolute;
+				top: 22%;
+				right: -13%;
 			}
 		}
 	}
 
 	& .keterangan-isi {
-		width: 40%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
 
 		& div:nth-child(1) {
 			font-size: 3rem;
