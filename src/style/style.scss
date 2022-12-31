@@ -1,4 +1,5 @@
 @use './home';
+@use 'mixin' as mx;
 
 :root {
 	font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -17,10 +18,16 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+	font-family: "Space Mono";
+	src: url('../font/SpaceMono-Regular.ttf');
+}
+
 
 * {
 	padding: 0;
 	margin: 0;
+	font-family: 'Space Mono';
 }
 
 body {
@@ -28,10 +35,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	background-color: mx.$c1;
 }
 
 .nanda {
-	border: 10px solid black;
+	border: 10px solid mx.$c4;
 	width: 90vw;
 	height: 90vh;
+	background-color: mx.$c5;
 }
